@@ -1,5 +1,5 @@
 # Frontend Mentor - Bookmark landing page
-
+Live preview link: https://chamumutezva.github.io/book-marking-landing-page/
 ![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
