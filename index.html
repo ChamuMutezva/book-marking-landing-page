@@ -13,7 +13,7 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+  <script src="jquery.min.js"></script>
 </head>
 
 <body>
@@ -28,10 +28,18 @@
         <img src="images/icon-close.svg" class="openClose">
       </section>
       <nav>
-        <a href="">Features </a>
-        <a href="">Pricing </a>
-        <a href="">Contact</a>
-        <a href="">Login</a>
+        <div class="modalFeatures">
+          <a href="">Features </a>
+        </div>
+        <div class="modalFeatures">
+          <a href="">Pricing </a>
+        </div>
+        <div class="modalFeatures">
+          <a href="">Contact</a>
+        </div>
+        <div class="modalFeatures">
+          <a href="" class="logs">Login</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -59,7 +67,9 @@
         Your bookmarks sync between your devices so you can access them on the go.
       </p>
       <hr />
-      <h3>Simple Bookmarking</h3>
+      <a href="">
+        <h3>Simple Bookmarking</h3>
+      </a>
       <hr />
       <h3>Speedy Searching</h3>
       <hr />
@@ -228,24 +238,20 @@
       <nav>
         <a href="">Features </a>
         <a href="">Pricing </a>
-        <a href="">Contact</a>       
+        <a href="">Contact</a>
       </nav>
       <div class="socialIcons">
         <ul>
-          <li><a href="https://twitter.com/ChamuMutezva" class="fa fa-twitter"
-             aria-label="visit me on twitter" target="_blank"  rel="noopener"></a>
+          <li class="twitter"><a href="https://twitter.com/ChamuMutezva" class="fa fa-twitter"
+              aria-label="visit me on twitter" target="_blank" rel="noopener"></a>
           </li>
-          <li><a href="https://www.facebook.com/chamu.mutezva" class="fa fa-facebook-square"
-             aria-label="visit my facebook page"  rel="noopener"></a>
+          <li class="facebook"><a href="https://www.facebook.com/chamu.mutezva" class="fa fa-facebook-square"
+              aria-label="visit my facebook page" rel="noopener"></a>
         </ul>
       </div>
     </div>
 
 
-
-    
-
-   
 
 
     <p class="attribution">
