@@ -55,8 +55,18 @@
 background-size: 80% 30%;*/
     }
 
+div.speedySearching img,
+div.shareBookMarks img{
+ width: 90%;
+ height: 40vh;
+}
+
+.bookmarkInOneClick h3{
+    margin-top: 10%;
+}
     section.hero img,
-    section.features img {
+    section.features img
+     {
         position: relative;
         width: 90%;
         display: block;
@@ -108,22 +118,28 @@ background-size: 80% 30%;*/
         opacity: 0.3;
     }
 
-    div#backImgHero,
-    div#backImgFeatures {
+    div.backImgHero,
+    div.backImgFeatures {
         width: 75%;
         height: 30vh;
-        position: absolute;
+
         background-color: cornflowerblue;
         z-index: 0;
     }
 
-    div#backImgHero {
+    div.backImgHero {
+        position: absolute;
+    }
+
+
+    div.backImgHero {
         left: 20%;
         margin-top: 20%;
         border-bottom-left-radius: 30%;
     }
 
-    div#backImgFeatures {
+    div.backImgFeatures {
+        position: absolute;
         margin-top: 12%;
         height: 35vh;
         margin-left: 2%;
@@ -133,6 +149,7 @@ background-size: 80% 30%;*/
     input.moreInfo {
         margin: auto;
         display: block;
+        margin-bottom: 10%;
     }
 
     img.browserImg,
@@ -170,7 +187,7 @@ background-size: 80% 30%;*/
         transform: rotate(180deg);
     }
 
-    hr{
+    hr {
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -195,11 +212,12 @@ background-size: 80% 30%;*/
         background-color: red;
         color: white;
     }
+
     footer {
         background-color: chocolate;
     }
 
-    footer nav{
+    footer nav {
         margin-top: 5%;
         margin-bottom: 15%;
     }
@@ -209,7 +227,7 @@ background-size: 80% 30%;*/
         margin: 5% auto;
     }
 
-    footer a{
+    footer a {
         text-decoration: none;
     }
 
@@ -217,7 +235,7 @@ background-size: 80% 30%;*/
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-        
+
     }
 
     li {
@@ -232,15 +250,15 @@ background-size: 80% 30%;*/
     li.facebook {
         justify-self: left;
         margin-left: 5%;
-        
+
     }
 
-    nav a{
+    nav a {
         color: white;
         text-decoration: none;
     }
 
-    header nav{
+    header nav {
         grid-row-gap: 50%;
     }
 
@@ -249,5 +267,9 @@ background-size: 80% 30%;*/
         padding-top: 2%;
         width: 90%;
         text-align: center;
+    }
+
+    .speedySearching {
+        margin-top: 10%;
     }
 }
