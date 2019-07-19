@@ -11,12 +11,13 @@
         margin-bottom: 10%;
     }
 
-    nav {
+    nav.featureLinks {
         display: grid;
         justify-items: center;
-        grid-row-gap: 20%;
+
         margin-top: 20%;
         font-size: large;
+        grid-row-gap: 50%;
         /*justify-self: end;*/
     }
 
@@ -47,7 +48,7 @@
         top: 0;
         left: 0;
         z-index: 10;
-       opacity: 0.97;
+        opacity: 0.97;
     }
 
     section.hero {
@@ -104,6 +105,7 @@ background-size: 80% 30%;*/
         width: 40vw;
         height: 8vh;
         border-radius: 10px;
+        background-color: hsl(231, 69%, 60%);
     }
 
     .chrome {
@@ -112,7 +114,7 @@ background-size: 80% 30%;*/
     }
 
     h3 {
-       /* padding: 5% 0;*/
+        /* padding: 5% 0;*/
     }
 
     hr {
@@ -156,21 +158,36 @@ background-size: 80% 30%;*/
     img.browserImg,
     .dotsImg,
     button.addExtBtn {
-        margin: auto;
+        margin: 10% auto;
         display: block;
+
+    }
+
+    button.addExtBtn {
+        background-color: hsl(231, 69%, 60%);
+        color: white;
+        width: 60vw;
+        height: 8vh;
+        border-radius: 10px
+    }
+
+    img.dotsImg {
+        width: 90%;
     }
 
     img.browserImg {
-        margin-top: 5%;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
 
     figure {
         width: 80%;
         margin: auto;
-        border: 1px solid darkred;
+        border: 0.5px solid cornsilk;
         margin-bottom: 5%;
-        height: 60vh;
+        height: 65vh;
         border-radius: 10px;
+        box-shadow: inset -1px 1px 0px 1px #e8e6e6;
     }
 
     summary::-webkit-details-marker {
@@ -195,7 +212,8 @@ background-size: 80% 30%;*/
 
     .contactUs {
         height: 60vh;
-        background-color: cadetblue;
+        background-color: hsl(231, 69%, 60%);
+
     }
 
     input[type="email"],
@@ -215,17 +233,21 @@ background-size: 80% 30%;*/
     }
 
     footer {
-        background-color: chocolate;
+        background-color: hsl(229, 31%, 21%);
     }
 
     footer nav {
         margin-top: 5%;
         margin-bottom: 15%;
+        display: grid;
+        grid-row-gap: 20%;
+        justify-items: center;
     }
 
     img.bookmarkFooter {
         display: block;
         margin: 5% auto;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
     }
 
     footer a {
@@ -260,7 +282,9 @@ background-size: 80% 30%;*/
     }
 
     header nav {
-        grid-row-gap: 50%;
+        display: grid;
+        grid-row-gap: 30%;
+
     }
 
     .modalFeatures {
@@ -268,6 +292,7 @@ background-size: 80% 30%;*/
         padding-top: 2%;
         width: 90%;
         text-align: center;
+        margin: 10% auto;
     }
 
     .speedySearching {
@@ -285,7 +310,14 @@ background-size: 80% 30%;*/
         margin-top: 0;
     }
 
-   
+    summary {
+        width: 90%;
+        margin: auto;
+    }
 
+    a.fa.fa-facebook-square,
+    a.fa.fa-twitter {
+        color: white;
+    }
 
 }
