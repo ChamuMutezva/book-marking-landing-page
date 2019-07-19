@@ -47,6 +47,7 @@
         top: 0;
         left: 0;
         z-index: 10;
+       opacity: 0.97;
     }
 
     section.hero {
@@ -111,7 +112,7 @@ background-size: 80% 30%;*/
     }
 
     h3 {
-        padding: 5% 0;
+       /* padding: 5% 0;*/
     }
 
     hr {
