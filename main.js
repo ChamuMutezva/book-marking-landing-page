@@ -21,10 +21,10 @@ for (let opened of openClose) {
 function openModal() {
     if (modal.classList.contains("show")) {
         document.body.style.overflow = "auto";
-      
-       // const top = document.body.style.top;
+
+        // const top = document.body.style.top;
         //document.body.style.position = 'fixed';
-       // document.body.style.top = `-${window.scrollY}px`;
+        // document.body.style.top = `-${window.scrollY}px`;
         //window.scrollTo(0, parseInt(scrollY || '0') * -1);
         console.log("modal ent 1");
     } else {
@@ -34,3 +34,44 @@ function openModal() {
         console.log("modal ent 3");
     }
 }
+function openAltImgSearch() {
+    let target1 = document.querySelector('.altenateImg');
+    target1.style.marginTop = "10%";
+    target1.style.height = "100%";
+    target1.style.visibility = "visible";
+
+
+    let closeTarget1 = document.getElementById('speedySearch');
+    closeTarget1.style.marginTop = "0";
+    closeTarget1.style.height = "0";
+    closeTarget1.style.visibility = "hidden";
+
+    let closeTarget2 = document.getElementById('shareBkMarks');
+    closeTarget2.style.marginTop = "0";
+    closeTarget2.style.height = "0";
+    closeTarget2.style.visibility = "hidden";
+
+}
+let openAltImgLink = document.querySelector(".simpleBookMarkingLink");
+openAltImgLink.addEventListener("click", openAltImgSearch);
+
+function openSpeedySearch() {  
+    let target1 = document.getElementById('speedySearch');
+    target1.style.marginTop = "10%";
+    target1.style.height = "100%";
+    target1.style.visibility = "visible";
+
+
+    let closeTarget1 = document.querySelector('.altenateImg');
+    closeTarget1.style.marginTop = "0";
+    closeTarget1.style.height = "0";
+    closeTarget1.style.visibility = "hidden";
+
+    let closeTarget2 = document.getElementById('shareBkMarks');
+    closeTarget2.style.marginTop = "0";
+    closeTarget2.style.height = "0";
+    closeTarget2.style.visibility = "hidden";
+
+}
+let openLinkSpeedy = document.querySelector(".speedySearchingLink");
+openLinkSpeedy.addEventListener("click", openSpeedySearch);

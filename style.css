@@ -55,18 +55,18 @@
 background-size: 80% 30%;*/
     }
 
-div.speedySearching img,
-div.shareBookMarks img{
- width: 90%;
- height: 40vh;
-}
+    div.speedySearching img,
+    div.shareBookMarks img {
+        width: 90%;
+        height: 40vh;
+    }
 
-.bookmarkInOneClick h3{
-    margin-top: 10%;
-}
+    .bookmarkInOneClick h3 {
+        margin-top: 10%;
+    }
+
     section.hero img,
-    section.features img
-     {
+    section.features img {
         position: relative;
         width: 90%;
         display: block;
@@ -272,4 +272,19 @@ div.shareBookMarks img{
     .speedySearching {
         margin-top: 10%;
     }
+
+    #modal .navLogo .bookmark {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
+
+    #speedySearch,
+    #shareBkMarks {
+        visibility: hidden;
+        height: 0;
+        margin-top: 0;
+    }
+
+   
+
+
 }
