@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: "Rubik", sans-serif;
+}
 
 @media only screen and (min-width: 300px) {
     header {
@@ -92,7 +95,7 @@ background-size: 80% 30%;*/
     }
 
     p {
-        margin: 5% 10%;
+        margin: 5% 5%;
         text-align: center;
         line-height: 1.4em;
     }
@@ -203,6 +206,7 @@ background-size: 80% 30%;*/
         content: url("images/icon-arrow.svg");
         display: inline-block;
         transform: rotate(180deg);
+         filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%);
     }
 
     hr {
@@ -234,6 +238,7 @@ background-size: 80% 30%;*/
 
     footer {
         background-color: hsl(229, 31%, 21%);
+        color: white;
     }
 
     footer nav {
@@ -318,6 +323,25 @@ background-size: 80% 30%;*/
     a.fa.fa-facebook-square,
     a.fa.fa-twitter {
         color: white;
+    }
+
+    footer p {
+        letter-spacing: 0.1em;
+    }
+
+    footer h3 {
+        font-size: x-large;
+        margin-bottom: 5%;
+    }
+
+    .answer {
+        margin-top: 5%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    main {
+        font-size: small;
     }
 
 }
