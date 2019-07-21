@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Rubik", sans-serif;
 }
@@ -188,7 +189,7 @@ background-size: 80% 30%;*/
         margin: auto;
         border: 0.5px solid cornsilk;
         margin-bottom: 5%;
-        height: 65vh;
+        height: 80vh;
         border-radius: 10px;
         box-shadow: inset -1px 1px 0px 1px #e8e6e6;
     }
@@ -206,7 +207,7 @@ background-size: 80% 30%;*/
         content: url("images/icon-arrow.svg");
         display: inline-block;
         transform: rotate(180deg);
-         filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%);
     }
 
     hr {
@@ -343,5 +344,86 @@ background-size: 80% 30%;*/
     main {
         font-size: small;
     }
+
+    .socialIcons {
+        display: block;
+    }
+
+    .mainNav img.bookmark,
+    .mainNav img.openClose {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 790px) {
+    body {
+        overflow: auto;
+    }
+
+    #modal img.bookmark {
+        margin-top: 10%;
+    }
+
+    img.openClose {
+        display: none;
+    }
+
+    div#modal {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        height: 10vh;
+    }
+
+    .modalFeatures {
+        border-top: none;
+    }
+
+    .featureList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .socialIcons {
+        display: none;
+    }
+
+    .mainNav img.bookmark,
+    .mainNav img.openClose {
+        display: none;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bookmarkManager {
+        grid-area: 1/1;
+    }
+
+    div.backImgHero {
+        width: 40%;
+        height: 30vh;
+        margin-top: 12%;
+        left: 60%;
+    }
+
+    input[type="button"] {
+        width: 25vw;
+    }
+
+    .getIt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .mainFeature {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 
 }
