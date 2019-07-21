@@ -359,6 +359,7 @@ background-size: 80% 30%;*/
 @media only screen and (min-width: 790px) {
     body {
         overflow: auto;
+        font-size: large;
     }
 
     #modal img.bookmark {
@@ -407,11 +408,12 @@ background-size: 80% 30%;*/
         width: 40%;
         height: 30vh;
         margin-top: 12%;
-        left: 60%;
+        left: 65%;
     }
 
     input[type="button"] {
         width: 25vw;
+        margin-left: 10%;
     }
 
     .getIt {
@@ -425,5 +427,48 @@ background-size: 80% 30%;*/
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    main {
+        font-size: large;
+    }
+
+    .headerFeature {
+        width: 80%;
+        margin: auto;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .mainFeature {
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .altenateImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    div.backImgFeatures {
+        width: 40%;
+        height: 30%;
+    }
+
+    .targets {
+        margin-bottom: 10%;
+    }
+
+    .extList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    button.addExtBtn {
+        width: 25vw;
+    }
+
+    figure {
+        height: 50vh;
+    }
 
 }
