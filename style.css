@@ -141,14 +141,14 @@ background-size: 80% 30%;*/
 
     div.backImgHero {
         left: 20%;
-        margin-top: 20%;
+        margin-top: 10%;
         border-bottom-left-radius: 30%;
     }
 
     div.backImgFeatures {
         position: absolute;
         margin-top: 12%;
-        height: 35vh;
+        height: 30vh;
         margin-left: 2%;
         border-bottom-right-radius: 20%;
     }
@@ -240,6 +240,7 @@ background-size: 80% 30%;*/
     footer {
         background-color: hsl(229, 31%, 21%);
         color: white;
+        height: 100%;
     }
 
     footer nav {
@@ -345,7 +346,7 @@ background-size: 80% 30%;*/
         font-size: small;
     }
 
-    .socialIcons {
+    header .socialIcons {
         display: block;
     }
 
@@ -386,7 +387,7 @@ background-size: 80% 30%;*/
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .socialIcons {
+   header .socialIcons {
         display: none;
     }
 
@@ -407,7 +408,7 @@ background-size: 80% 30%;*/
     div.backImgHero {
         width: 40%;
         height: 30vh;
-        margin-top: 12%;
+        margin-top: 2%;
         left: 65%;
     }
 
@@ -469,6 +470,53 @@ background-size: 80% 30%;*/
 
     figure {
         height: 50vh;
+    }
+
+    section.faqs {
+        width: 60%;
+        margin: auto;
+    }
+
+    input.moreInfo {
+        margin: auto;
+    }
+
+    .stayUpToDate {
+        width: 60%;
+        margin: 10% auto;
+    }
+
+    input[type="email"] {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 60%;
+        margin-left: 5%
+    }
+
+    .signIn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .additionalSocials {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 5vh;
+    }
+
+    footer nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .socialIcons {
+        margin-top: 10%;
+    }
+
+    img.bookmarkFooter {
+        margin-top: 10%;
     }
 
 }
