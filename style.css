@@ -69,7 +69,7 @@ background-size: 80% 30%;*/
 
     .bookmarkInOneClick h3 {
         margin-top: 10%;
-    }
+    } 
 
     section.hero img,
     section.features img {
@@ -77,8 +77,12 @@ background-size: 80% 30%;*/
         width: 90%;
         display: block;
         margin: auto;
-        /* box-shadow: inset -4px 20px 16px 20px darkgrey;*/
+       /* text-align: center;
+         box-shadow: inset -4px 20px 16px 20px darkgrey;
+         */
+        
     }
+
 
     section.features img {
         position: relative;
@@ -110,11 +114,11 @@ background-size: 80% 30%;*/
         height: 8vh;
         border-radius: 10px;
         background-color: hsl(231, 69%, 60%);
+         color: white;
     }
 
-    .chrome {
-        background-color: hsl(231, 69%, 60%);
-        color: white;
+    .chrome {        
+       
     }
 
     h3 {
@@ -128,7 +132,7 @@ background-size: 80% 30%;*/
     div.backImgHero,
     div.backImgFeatures {
         width: 75%;
-        height: 30vh;
+        height: 40vh;
 
         background-color: cornflowerblue;
         z-index: 0;
@@ -145,10 +149,18 @@ background-size: 80% 30%;*/
         border-bottom-left-radius: 30%;
     }
 
+  /*  div.backImgHero::before {
+        content: "";
+        background-image: url("images/illustration-hero.svg");
+        display: inline-block;
+        width: 60%;
+        height: 40%;
+    }*/
+
     div.backImgFeatures {
         position: absolute;
         margin-top: 12%;
-        height: 30vh;
+        height: 40vh;
         margin-left: 2%;
         border-bottom-right-radius: 20%;
     }
@@ -355,6 +367,10 @@ background-size: 80% 30%;*/
         display: block;
     }
 
+    a {
+        color: rgb(243, 54, 87);
+    }
+
 }
 
 @media only screen and (min-width: 790px) {
@@ -375,7 +391,7 @@ background-size: 80% 30%;*/
         opacity: 1;
         display: grid;
         grid-template-columns: 1fr 4fr;
-        height: 10vh;
+        height: 15vh;
     }
 
     .modalFeatures {
