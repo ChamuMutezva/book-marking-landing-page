@@ -8,7 +8,13 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
+
 @media only screen and (min-width: 300px) {
+    .page_wrapper {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     header {
         /*display: grid;
         grid-template-columns: 1fr 2fr;*/
@@ -33,7 +39,7 @@ body {
 
     img.openClose {
         justify-self: right;
-        margin-right: 5%;
+        margin-right: 15%;
     }
 
     img.bookmark {
@@ -57,6 +63,7 @@ body {
 
     section.hero {
         margin-bottom: 10%;
+        margin-top: 20%;
         /*  background-color: blue;
 background-size: 80% 30%;*/
     }
@@ -69,7 +76,7 @@ background-size: 80% 30%;*/
 
     .bookmarkInOneClick h3 {
         margin-top: 10%;
-    } 
+    }
 
     section.hero img,
     section.features img {
@@ -77,10 +84,10 @@ background-size: 80% 30%;*/
         width: 90%;
         display: block;
         margin: auto;
-       /* text-align: center;
+        /* text-align: center;
          box-shadow: inset -4px 20px 16px 20px darkgrey;
          */
-        
+
     }
 
 
@@ -114,12 +121,10 @@ background-size: 80% 30%;*/
         height: 8vh;
         border-radius: 10px;
         background-color: hsl(231, 69%, 60%);
-         color: white;
+        color: white;
     }
 
-    .chrome {        
-       
-    }
+    .chrome {}
 
     h3 {
         /* padding: 5% 0;*/
@@ -131,36 +136,50 @@ background-size: 80% 30%;*/
 
     div.backImgHero,
     div.backImgFeatures {
-        width: 75%;
-        height: 40vh;
-
+        width: 70vw;
+        height: 35vh;
         background-color: cornflowerblue;
         z-index: 0;
     }
 
-    div.backImgHero {
+    div.backImgHero::before {
         position: absolute;
+        content: "";
+        display: block;
+        top: -30%;
+        left: -15%;
+        width: 75vw;
+        height: 50vh;
+        background-image: url("images/illustration-hero.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
+    /*  div.backImgFeatures::before {
+          left: 5%;
+         
+      }*/
 
     div.backImgHero {
+        position: relative;
+        ;
         left: 20%;
-        margin-top: 10%;
+        margin-top: 25%;
         border-bottom-left-radius: 30%;
     }
 
-  /*  div.backImgHero::before {
+    /* .heroImage img::after {
         content: "";
-        background-image: url("images/illustration-hero.svg");
-        display: inline-block;
-        width: 60%;
-        height: 40%;
+          width: 60%;
+          height: 40%;
+       background-color: black;
+      
     }*/
 
     div.backImgFeatures {
         position: absolute;
-        margin-top: 12%;
-        height: 40vh;
+        margin-top: 25%;
+        height: 30vh;
         margin-left: 2%;
         border-bottom-right-radius: 20%;
     }
@@ -373,6 +392,15 @@ background-size: 80% 30%;*/
 
 }
 
+@media only screen and (min-width: 520px) {
+
+    div.backImgHero,
+    div.backImgFeatures {
+        width: 55vw;
+        
+    }
+}
+
 @media only screen and (min-width: 790px) {
     body {
         overflow: auto;
@@ -403,7 +431,7 @@ background-size: 80% 30%;*/
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-   header .socialIcons {
+    header .socialIcons {
         display: none;
     }
 
@@ -422,14 +450,14 @@ background-size: 80% 30%;*/
     }
 
     div.backImgHero {
-        width: 40%;
-        height: 30vh;
+        width: 40vw;
+        height: 40vh;
         margin-top: 2%;
-        left: 65%;
+        left: 10%;
     }
 
     input[type="button"] {
-        width: 25vw;
+        width: 20vw;
         margin-left: 10%;
     }
 
@@ -467,8 +495,8 @@ background-size: 80% 30%;*/
     }
 
     div.backImgFeatures {
-        width: 40%;
-        height: 30%;
+        width: 40vw;
+        height: 40vh;
     }
 
     .targets {
