@@ -415,6 +415,17 @@ background-size: 80% 30%;*/
 
 @media only screen and (min-width: 520px) {
 
+    button.addExtBtn {
+      width: 40vw;
+    }
+
+    img.browserImg,
+    .dotsImg,
+    button.addExtBtn {
+        margin: 4% auto;
+        display: block;        
+    }
+
     div.backImgFeatures {        
         margin-top: 5%;
         height: 37vh;
@@ -541,6 +552,7 @@ background-size: 80% 30%;*/
     .extList {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        height: 35vw;
     }
 
     button.addExtBtn {
@@ -553,7 +565,7 @@ background-size: 80% 30%;*/
 
     section.faqs {
         width: 60%;
-        margin: auto;
+        margin: 12% auto;
     }
 
     input.moreInfo {
@@ -599,10 +611,25 @@ background-size: 80% 30%;*/
     }
 
     .modalFeatures:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: hsl(0, 94%, 66%);
         height: 6vh;
+        
         width: 15vw;
         border-radius: 5px;
     }
+
+    .firefoxExt {
+        align-self: center;
+    }
+    .operaExt {
+        align-self: end;
+    }
+.modalFeatures:nth-child(3) {
+    border-bottom: none;   
+}
+
 
 }
