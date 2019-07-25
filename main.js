@@ -12,6 +12,16 @@ for (let opened of openClose) {
     })
 }
 
+let features = Array.from(document.querySelectorAll(".modalFeatures"));
+for (let feature of features) {
+    feature.addEventListener("click", function () {
+        console.log(modal);
+        modal.classList.toggle("show");
+        openModal();
+        console.log(modal);
+
+    })
+}
 /*$('#modal').on('shown', function () {
     $('body').css('overflow', 'hidden');
 }).on('hidden', function () {
@@ -34,6 +44,8 @@ function openModal() {
         console.log("modal ent 3");
     }
 }
+
+
 
 /*
 const altenateLinks = Array.from(document.querySelectorAll(".featureLinks"));
@@ -86,7 +98,7 @@ function openAltImgSearch() {
 let openAltImgLink = document.querySelector(".simpleBookMarkingLink");
 openAltImgLink.addEventListener("click", openAltImgSearch);
 
-function openSpeedySearch() {  
+function openSpeedySearch() {
     let target1 = document.getElementById('speedySearch');
     target1.style.marginTop = "10%";
     target1.style.height = "100%";
