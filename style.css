@@ -329,7 +329,8 @@ background-size: 80% 30%;*/
     }
 
     .modalFeatures {
-        border-top: 1px solid white;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        ;
         padding-top: 2%;
         width: 90%;
         text-align: center;
@@ -397,12 +398,25 @@ background-size: 80% 30%;*/
         margin-bottom: 15%;
     }
 
+    .modalFeatures:nth-child(3) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        padding-bottom: 5%;
+    }
+
+
+    .modalFeatures:last-child {
+        width: 60%;
+        border: 1px solid white;
+        line-height: 3em;
+        height: 10vh;
+    }
+
 }
 
 @media only screen and (min-width: 520px) {
 
     div.backImgFeatures {        
-        margin-top: 15%;
+        margin-top: 5%;
         height: 37vh;
         margin-left: 9%;
         
@@ -414,7 +428,7 @@ background-size: 80% 30%;*/
     }
     
     section.features img {        
-        width: 70%;       
+        width: 90%;       
     }
 
     .mainImagesDescr {
@@ -422,7 +436,7 @@ background-size: 80% 30%;*/
     }
 }
 
-@media only screen and (min-width: 790px) {
+@media only screen and (min-width: 800px) {
     body {
         overflow: auto;
         font-size: large;
@@ -582,6 +596,13 @@ background-size: 80% 30%;*/
 
     img.bookmarkFooter {
         margin-top: 10%;
+    }
+
+    .modalFeatures:last-child{
+        background-color: hsl(0, 94%, 66%);
+        height: 6vh;
+        width: 15vw;
+        border-radius: 5px;
     }
 
 }
