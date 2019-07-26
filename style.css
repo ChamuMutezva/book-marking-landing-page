@@ -21,6 +21,10 @@ body {
         margin-bottom: 10%;
     }
 
+    input::placeholder{
+        color: red;
+    }
+
     nav.featureLinks {
         display: grid;
         justify-items: center;
