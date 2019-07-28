@@ -3,13 +3,24 @@ let modal = document.getElementById("modal");
 console.log(openClose);
 console.log(modal);
 
+/*openClose[1].addEventListener("click", function () {
+    if (modal.classList.contains("modalOut")) {
+        modal.classList.toggle("modalOut");
+    } else {
+        modal.classList.toggle("modalOut");
+    }
+    
+})*/
+
 for (let opened of openClose) {
     opened.addEventListener("click", function () {
         console.log(this);
-        modal.classList.toggle("show");
+        modal.classList.toggle("show");       
         openModal();
     })
 }
+
+
 
 let features = Array.from(document.querySelectorAll(".modalFeatures"));
 for (let feature of features) {
@@ -30,7 +41,7 @@ for (let feature of features) {
 function openModal() {
     if (modal.classList.contains("show")) {
         document.body.style.overflow = "auto";
-
+       
         // const top = document.body.style.top;
         //document.body.style.position = 'fixed';
         // document.body.style.top = `-${window.scrollY}px`;
@@ -38,6 +49,7 @@ function openModal() {
         console.log("modal ent 1");
     } else {
         document.body.style.overflow = "hidden";
+       
         //document.body.style.position = '';
         //document.body.style.top = '';
         console.log("modal ent 3");

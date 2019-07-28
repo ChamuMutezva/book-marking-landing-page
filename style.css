@@ -10,6 +10,7 @@ body {
 
 
 @media only screen and (min-width: 300px) {
+
     .page_wrapper {
         width: 100%;
         overflow-x: hidden;
@@ -21,7 +22,7 @@ body {
         margin-bottom: 10%;
     }
 
-    input::placeholder{
+    input::placeholder {
         color: red;
     }
 
@@ -63,10 +64,86 @@ body {
         left: 0;
         z-index: 10;
         opacity: 0.97;
+        animation-name: rollIn;
+        animation-duration: 1s;
     }
 
+    @keyframes rollIn {
+        from {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    body {
+        
+        animation-name: zoomIn;
+        animation-duration: 1s;
+    }
+
+   @keyframes zoomIn {
+       from {
+           opacity: 0;
+           transform: scale3d(0.3, 0.3, 0.3);
+       }
+
+       50% {
+           opacity: 1;
+       }
+   }
+
+    /*
+
+   @keyframes slideOutLeft {
+       from {
+           transform: translate3d(0, 0, 0);
+       }
+
+       20% {
+           visibility: hidden;
+           transform: translate3d(-100%, 0, 0);
+       }
+   }
+
+   .slideOutLeft {
+       animation-name: slideOutLeft;
+   }
+   
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+} 
+ @keyframes slideOutRight {
+     from {
+         transform: translate3d(0, 0, 0);
+     }
+
+     to {
+         visibility: hidden;
+         transform: translate3d(100%, 0, 0);
+     }
+ }
+
+
+ .slideOutRight {
+     animation-name: slideOutRight;
+ }
+*/
+
+
     section.hero {
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         margin-top: 20%;
         /*  background-color: blue;
 background-size: 80% 30%;*/
@@ -103,7 +180,7 @@ background-size: 80% 30%;*/
     }
 
     h1 {
-        margin: 5% 10%;
+        margin: 5% 15%;
         text-align: center;
     }
 
@@ -114,7 +191,7 @@ background-size: 80% 30%;*/
     }
 
     p {
-        margin: 5% 5%;
+        margin: 5% 10%;
         text-align: center;
         line-height: 1.4em;
     }
@@ -131,6 +208,10 @@ background-size: 80% 30%;*/
         color: white;
     }
 
+    input[type="button"].firefox {
+        background-color: lightgrey;
+        color: black;
+    }
     .chrome {}
 
     h3 {
@@ -419,31 +500,36 @@ background-size: 80% 30%;*/
 
 @media only screen and (min-width: 520px) {
 
+    figure {
+             
+        height: 65vh;        
+    }
+
     button.addExtBtn {
-      width: 40vw;
+        width: 40vw;
     }
 
     img.browserImg,
     .dotsImg,
     button.addExtBtn {
         margin: 4% auto;
-        display: block;        
+        display: block;
     }
 
-    div.backImgFeatures {        
+    div.backImgFeatures {
         margin-top: 5%;
         height: 37vh;
         margin-left: 9%;
-        
+
     }
 
     div.backImgHero,
     div.backImgFeatures {
-        width: 55vw;        
+        width: 55vw;
     }
-    
-    section.features img {        
-        width: 90%;       
+
+    section.features img {
+        width: 90%;
     }
 
     .mainImagesDescr {
@@ -564,7 +650,7 @@ background-size: 80% 30%;*/
     }
 
     figure {
-        height: 50vh;
+        height: 65vh;
     }
 
     section.faqs {
@@ -614,13 +700,13 @@ background-size: 80% 30%;*/
         margin-top: 10%;
     }
 
-    .modalFeatures:last-child{
+    .modalFeatures:last-child {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: hsl(0, 94%, 66%);
         height: 6vh;
-        
+
         width: 15vw;
         border-radius: 5px;
     }
@@ -628,12 +714,14 @@ background-size: 80% 30%;*/
     .firefoxExt {
         align-self: center;
     }
+
     .operaExt {
         align-self: end;
     }
-.modalFeatures:nth-child(3) {
-    border-bottom: none;   
-}
+
+    .modalFeatures:nth-child(3) {
+        border-bottom: none;
+    }
 
 
 }

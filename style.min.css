@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Rubik, sans-serif
+}
+
+@media only screen and (min-width:300px) {
+    .page_wrapper {
+        width: 100%;
+        overflow-x: hidden
+    }
+
+    header {
+        margin-bottom: 10%
+    }
+
+    input::placeholder {
+        color: red
+    }
+
+    nav.featureLinks {
+        display: grid;
+        justify-items: center;
+        margin-top: 20%;
+        font-size: large;
+        grid-row-gap: 50%
+    }
+
+    section.navLogo {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+    img.openClose {
+        justify-self: right;
+        margin-right: 15%
+    }
+
+    img.bookmark {
+        margin-left: 5%
+    }
+
+    .show {
+        display: none
+    }
+
+    div#modal {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #242b46;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: .97
+    }
+
+    section.hero {
+        margin-bottom: 10%;
+        margin-top: 20%
+    }
+
+    div.shareBookMarks img,
+    div.speedySearching img {
+        width: 90%;
+        height: 40vh
+    }
+
+    .bookmarkInOneClick h3 {
+        margin-top: 10%
+    }
+
+    section.features img,
+    section.hero img {
+        position: relative;
+        width: 89%;
+        display: block;
+        margin: auto
+    }
+
+    .mainImagesDescr {
+        margin-top: 30%
+    }
+
+    section.features img {
+        position: relative
+    }
+
+    h1 {
+        margin: 5% 10%;
+        text-align: center
+    }
+
+    h2,
+    h3 {
+        text-align: center
+    }
+
+    p {
+        margin: 5% 5%;
+        text-align: center;
+        line-height: 1.4em
+    }
+
+    .getIt {
+        text-align: center
+    }
+
+    input[type=button] {
+        width: 40vw;
+        height: 8vh;
+        border-radius: 10px;
+        background-color: #5267df;
+        color: #fff
+    }
+
+    hr {
+        opacity: .3
+    }
+
+    div.backImgFeatures,
+    div.backImgHero {
+        width: 70vw;
+        height: 28vh;
+        background-color: #6495ed;
+        z-index: 0
+    }
+
+    div.backImgHero::before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: -30%;
+        left: -15%;
+        width: 75vw;
+        height: 50vh;
+        background-image: url(images/illustration-hero.svg);
+        background-size: contain;
+        background-repeat: no-repeat
+    }
+
+    div.backImgHero {
+        position: relative;
+        left: 20%;
+        margin-top: 25%;
+        border-bottom-left-radius: 30%
+    }
+
+    div.backImgFeatures {
+        position: absolute;
+        margin-top: 25%;
+        height: 28vh;
+        margin-left: 2%;
+        border-bottom-right-radius: 20%
+    }
+
+    input.moreInfo {
+        margin: auto;
+        display: block;
+        margin-bottom: 10%
+    }
+
+    .dotsImg,
+    button.addExtBtn,
+    img.browserImg {
+        margin: 10% auto;
+        display: block
+    }
+
+    button.addExtBtn {
+        background-color: #5267df;
+        color: #fff;
+        width: 60vw;
+        height: 8vh;
+        border-radius: 10px
+    }
+
+    img.dotsImg {
+        width: 90%
+    }
+
+    img.browserImg {
+        margin-top: 10%;
+        margin-bottom: 5%
+    }
+
+    figure {
+        width: 80%;
+        margin: auto;
+        border: .5px solid #fff8dc;
+        margin-bottom: 5%;
+        height: 80vh;
+        border-radius: 10px;
+        box-shadow: inset -1px 1px 0 1px #e8e6e6
+    }
+
+    summary::-webkit-details-marker {
+        display: none
+    }
+
+    summary:after {
+        content: url(images/icon-arrow.svg);
+        float: right
+    }
+
+    details[open] summary:after {
+        content: url(images/icon-arrow.svg);
+        display: inline-block;
+        transform: rotate(180deg);
+        filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%)
+    }
+
+    hr {
+        margin-top: 5%;
+        margin-bottom: 5%
+    }
+
+    .contactUs {
+        height: 60vh;
+        background-color: #5267df
+    }
+
+    input[type=email],
+    input[type=submit] {
+        display: block;
+        margin: auto;
+        width: 80vw;
+        height: 8vh;
+        border-radius: 5px;
+        padding-left: 5%;
+        margin-bottom: 5%
+    }
+
+    input[type=submit] {
+        background-color: red;
+        color: #fff
+    }
+
+    footer {
+        background-color: #242b46;
+        color: #fff;
+        height: 100%
+    }
+
+    footer nav {
+        margin-top: 5%;
+        margin-bottom: 15%;
+        display: grid;
+        grid-row-gap: 20%;
+        justify-items: center
+    }
+
+    img.bookmarkFooter {
+        display: block;
+        margin: 5% auto;
+        filter: invert(100%) sepia(100%) saturate(0) hue-rotate(288deg) brightness(102%) contrast(102%)
+    }
+
+    footer a {
+        text-decoration: none
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center
+    }
+
+    li {
+        list-style-type: none
+    }
+
+    li.twitter {
+        justify-self: right;
+        margin-right: 5%
+    }
+
+    li.facebook {
+        justify-self: left;
+        margin-left: 5%
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none
+    }
+
+    header nav {
+        display: grid;
+        grid-row-gap: 30%
+    }
+
+    .modalFeatures {
+        border-top: 1px solid rgba(255, 255, 255, .25);
+        padding-top: 2%;
+        width: 90%;
+        text-align: center;
+        margin: 10% auto
+    }
+
+    .speedySearching {
+        margin-top: 10%
+    }
+
+    #modal .navLogo .bookmark {
+        filter: invert(100%) sepia(100%) saturate(0) hue-rotate(288deg) brightness(102%) contrast(102%)
+    }
+
+    #shareBkMarks,
+    #speedySearch {
+        visibility: hidden;
+        height: 0;
+        margin-top: 0
+    }
+
+    summary {
+        width: 90%;
+        margin: auto
+    }
+
+    a.fa.fa-facebook-square,
+    a.fa.fa-twitter {
+        color: #fff
+    }
+
+    footer p {
+        letter-spacing: .1em
+    }
+
+    footer h3 {
+        font-size: x-large;
+        margin-bottom: 5%
+    }
+
+    .answer {
+        margin-top: 5%;
+        width: 90%;
+        margin-left: 5%
+    }
+
+    main {
+        font-size: small
+    }
+
+    header .socialIcons {
+        display: block
+    }
+
+    .mainNav img.bookmark,
+    .mainNav img.openClose {
+        display: block
+    }
+
+    a {
+        color: #f33657
+    }
+
+    .heroImage {
+        margin-bottom: 15%
+    }
+
+    .modalFeatures:nth-child(3) {
+        border-bottom: 1px solid rgba(255, 255, 255, .25);
+        padding-bottom: 5%
+    }
+
+    .modalFeatures:last-child {
+        width: 60%;
+        border: 1px solid #fff;
+        line-height: 3em;
+        height: 10vh
+    }
+}
+
+@media only screen and (min-width:520px) {
+    button.addExtBtn {
+        width: 40vw
+    }
+
+    .dotsImg,
+    button.addExtBtn,
+    img.browserImg {
+        margin: 4% auto;
+        display: block
+    }
+
+    div.backImgFeatures {
+        margin-top: 5%;
+        height: 37vh;
+        margin-left: 9%
+    }
+
+    div.backImgFeatures,
+    div.backImgHero {
+        width: 55vw
+    }
+
+    section.features img {
+        width: 90%
+    }
+
+    .mainImagesDescr {
+        margin-top: 5%
+    }
+}
+
+@media only screen and (min-width:800px) {
+    body {
+        overflow: auto;
+        font-size: large
+    }
+
+    #modal img.bookmark {
+        margin-top: 10%
+    }
+
+    img.openClose {
+        display: none
+    }
+
+    div#modal {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        height: 15vh
+    }
+
+    .modalFeatures {
+        border-top: none
+    }
+
+    .featureList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr
+    }
+
+    header .socialIcons {
+        display: none
+    }
+
+    .mainNav img.bookmark,
+    .mainNav img.openClose {
+        display: none
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+    .bookmarkManager {
+        grid-area: 1/1
+    }
+
+    div.backImgHero {
+        width: 40vw;
+        height: 40vh;
+        margin-top: 2%;
+        left: 10%
+    }
+
+    input[type=button] {
+        width: 20vw;
+        margin-left: 10%
+    }
+
+    .getIt {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+    .mainFeature {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+
+    main {
+        font-size: large
+    }
+
+    .headerFeature {
+        width: 80%;
+        margin: auto;
+        padding-left: 15%;
+        padding-right: 15%
+    }
+
+    .mainFeature {
+        width: 80%;
+        margin: 5% auto
+    }
+
+    .altenateImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+    div.backImgFeatures {
+        width: 40vw;
+        height: 40vh
+    }
+
+    .targets {
+        margin-bottom: 10%
+    }
+
+    .extList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 35vw
+    }
+
+    button.addExtBtn {
+        width: 25vw
+    }
+
+    figure {
+        height: 50vh
+    }
+
+    section.faqs {
+        width: 60%;
+        margin: 12% auto
+    }
+
+    input.moreInfo {
+        margin: auto
+    }
+
+    .stayUpToDate {
+        width: 60%;
+        margin: 10% auto
+    }
+
+    input[type=email] {
+        width: 100%
+    }
+
+    input[type=submit] {
+        width: 60%;
+        margin-left: 5%
+    }
+
+    .signIn {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+    .additionalSocials {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 5vh
+    }
+
+    footer nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+
+    .socialIcons {
+        margin-top: 10%
+    }
+
+    img.bookmarkFooter {
+        margin-top: 10%
+    }
+
+    .modalFeatures:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f95656;
+        height: 6vh;
+        width: 15vw;
+        border-radius: 5px
+    }
+
+    .firefoxExt {
+        align-self: center
+    }
+
+    .operaExt {
+        align-self: end
+    }
+
+    .modalFeatures:nth-child(3) {
+        border-bottom: none
+    }
+}
