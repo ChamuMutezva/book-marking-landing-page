@@ -3,6 +3,22 @@ let modal = document.getElementById("modal");
 console.log(openClose);
 console.log(modal);
 
+let clickable = Array.from(document.querySelectorAll(".btnFeature"));
+
+for (let selTar of clickable) {
+    console.log(selTar.innerHTML);
+    selTar.style.borderBottom = "transparent";
+    selTar.addEventListener("click", function (evt) {
+        clickable.forEach(elem => elem.style.borderBottom = "transparent");
+        console.log(evt.target);        
+       // if (evt.target) {
+            this.style.borderBottom = "1px solid red";
+        //} else if (!evt.target) { 
+        
+   // }
+    })
+}
+
 /*openClose[1].addEventListener("click", function () {
     if (modal.classList.contains("modalOut")) {
         modal.classList.toggle("modalOut");
@@ -56,38 +72,17 @@ function openModal() {
     }
 }
 
-
-
 /*
+
+
 const altenateLinks = Array.from(document.querySelectorAll(".featureLinks"));
 //console.log(altenateLinks);
 altenateLinks.forEach(elem => {
-    
-    elem.addEventListener("click", function (evt) {
-        const clickedLink = evt.target; 
-        const changeTheseTargets = Array.from(document.querySelectorAll(".targets"));
-        if (clickedLink) {
-            const selectTarget = this.classList.item(this.classList.length - 1);
-            //console.log(selectTarget);
-            //console.log(changeTheseTargets);
-            changeTheseTargets.forEach(elements => {
-                if (elements.classList.contains(selectTarget)) {
-                    console.log(this);
-                    console.log(elements);
-                   elements.style.marginTop = "10%";
-                   elements.style.height = "100%";
-                    elements.style.visibility = "visible";
-                }
-                if (!elements.classList.contains(selectTarget)) {
-                    elements.style.marginTop = "0";
-                    elements.style.height = "0";
-                    elements.style.visibility = "hidden";
-                }
-            })
-        }
-    })
+   
 })
 */
+
+
 function openAltImgSearch() {
     let target1 = document.querySelector('.altenateImg');
     target1.style.marginTop = "10%";
