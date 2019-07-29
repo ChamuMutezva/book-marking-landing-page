@@ -19,20 +19,13 @@ for (let selTar of clickable) {
     })
 }
 
-/*openClose[1].addEventListener("click", function () {
-    if (modal.classList.contains("modalOut")) {
-        modal.classList.toggle("modalOut");
-    } else {
-        modal.classList.toggle("modalOut");
-    }
-    
-})*/
 
 for (let opened of openClose) {
     opened.addEventListener("click", function () {
         console.log(this);
         modal.classList.toggle("show");       
-        openModal();
+        openModal();      
+       
     })
 }
 
@@ -41,12 +34,19 @@ for (let opened of openClose) {
 let features = Array.from(document.querySelectorAll(".modalFeatures"));
 for (let feature of features) {
     feature.addEventListener("click", function () {
-        console.log(modal);
+        console.log(modal.classList);
         modal.classList.toggle("show");
         openModal();
         console.log(modal);
 
+        let modalHeight = modal.clientHeight;
+        console.log(modalHeight);
+        if (modalHeight == 116) {
+            document.body.style.overflow = "auto";
+        }
     })
+    
+   
 }
 /*$('#modal').on('shown', function () {
     $('body').css('overflow', 'hidden');
@@ -54,10 +54,10 @@ for (let feature of features) {
     $('body').css('overflow', 'auto');
 })*/
 
-function openModal() {
-    if (modal.classList.contains("show")) {
-        document.body.style.overflow = "auto";
-       
+function openModal() {     
+    
+    if (modal.classList.contains("show")) {        
+        document.body.style.overflow = "auto";       
         // const top = document.body.style.top;
         //document.body.style.position = 'fixed';
         // document.body.style.top = `-${window.scrollY}px`;
@@ -72,76 +72,44 @@ function openModal() {
     }
 }
 
-/*
+function oneClickBookmark() {
+    let curImage = document.querySelector('.mainImages img');
+    let curHeading = document.querySelector('.mainImagesDescr h3');
+    let curPara = document.querySelector('.mainImagesDescr p');
 
-
-const altenateLinks = Array.from(document.querySelectorAll(".featureLinks"));
-//console.log(altenateLinks);
-altenateLinks.forEach(elem => {
-   
-})
-*/
-
-
-function openAltImgSearch() {
-    let target1 = document.querySelector('.altenateImg');
-    target1.style.marginTop = "10%";
-    target1.style.height = "100%";
-    target1.style.visibility = "visible";
-
-
-    let closeTarget1 = document.getElementById('speedySearch');
-    closeTarget1.style.marginTop = "0";
-    closeTarget1.style.height = "0";
-    closeTarget1.style.visibility = "hidden";
-
-    let closeTarget2 = document.getElementById('shareBkMarks');
-    closeTarget2.style.marginTop = "0";
-    closeTarget2.style.height = "0";
-    closeTarget2.style.visibility = "hidden";
-
+    curImage.src = "images/illustration-hero.svg";
+    curHeading.innerHTML = `Bookmark in one click`;
+    curPara.innerHTML = `Organize your bookmarks however you like. Our simple drag-and-drop interface
+                gives you complete control over how you manage your favourite sites. `;
 }
 let openAltImgLink = document.querySelector(".simpleBookMarkingLink");
-openAltImgLink.addEventListener("click", openAltImgSearch);
-
-function openSpeedySearch() {
-    let target1 = document.getElementById('speedySearch');
-    target1.style.marginTop = "10%";
-    target1.style.height = "100%";
-    target1.style.visibility = "visible";
+openAltImgLink.addEventListener("click", oneClickBookmark);
 
 
-    let closeTarget1 = document.querySelector('.altenateImg');
-    closeTarget1.style.marginTop = "0";
-    closeTarget1.style.height = "0";
-    closeTarget1.style.visibility = "hidden";
+function speedSearching() {
+    let curImage = document.querySelector('.mainImages img');
+    let curHeading = document.querySelector('.mainImagesDescr h3');
+    let curPara = document.querySelector('.mainImagesDescr p');
 
-    let closeTarget2 = document.getElementById('shareBkMarks');
-    closeTarget2.style.marginTop = "0";
-    closeTarget2.style.height = "0";
-    closeTarget2.style.visibility = "hidden";
-
+    curImage.src = "images/illustration-features-tab-2.svg";
+    curHeading.innerHTML = "Intelligent search";
+    curPara.innerHTML = `Our powerful search feature will help you find saved sites in no time at all.
+                No need to trawl through all of your bookmarks.`;
 }
 let openLinkSpeedy = document.querySelector(".speedySearchingLink");
-openLinkSpeedy.addEventListener("click", openSpeedySearch);
+openLinkSpeedy.addEventListener("click", speedSearching);
 
-function easySharing() {
-    let target1 = document.getElementById('shareBkMarks');
-    target1.style.marginTop = "10%";
-    target1.style.height = "100%";
-    target1.style.visibility = "visible";
+function toggleBookMark() {
+    let curImage = document.querySelector('.mainImages img');
+    let curHeading = document.querySelector('.mainImagesDescr h3');
+    let curPara = document.querySelector('.mainImagesDescr p');
 
-
-    let closeTarget1 = document.querySelector('.altenateImg');
-    closeTarget1.style.marginTop = "0";
-    closeTarget1.style.height = "0";
-    closeTarget1.style.visibility = "hidden";
-
-    let closeTarget2 = document.getElementById('speedySearch');
-    closeTarget2.style.marginTop = "0";
-    closeTarget2.style.height = "0";
-    closeTarget2.style.visibility = "hidden";
-
+    curImage.src = "images/illustration-features-tab-3.svg";
+    curHeading.innerHTML = "Share your bookmarks";
+    curPara.innerHTML = `Easily share your bookmarks and collections with others. Create a shareable
+    link that you can send at the click of a button. `;
 }
+
 let easySharingBkMarks = document.querySelector(".easySharingLink");
-easySharingBkMarks.addEventListener("click", easySharing);
+easySharingBkMarks.addEventListener("click", toggleBookMark);
+

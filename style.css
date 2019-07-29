@@ -165,12 +165,17 @@ background-size: 80% 30%;*/
         width: 89%;
         display: block;
         margin: auto;
+        max-height: 45vh;
         /* text-align: center;
          box-shadow: inset -4px 20px 16px 20px darkgrey;
          */
 
     }
 
+    div#oneClickBook {
+        margin-top: 10%;
+    }
+    
     .mainImagesDescr {
         margin-top: 30%;
     }
