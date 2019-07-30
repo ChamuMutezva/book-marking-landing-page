@@ -274,6 +274,9 @@ background-size: 80% 30%;*/
         border-bottom-left-radius: 30%;
     }
 
+    button.btnFeature:hover {
+        cursor: pointer;
+    }
     /* .heroImage img::after {
         content: "";
           width: 60%;
