@@ -14,8 +14,8 @@ console.log(openClose);
 console.log(modal);
 
 let clickable = Array.from(document.querySelectorAll(".btnFeature"));
-
-for (let selTar of clickable) {
+//clickable[0].borderBottom = "1px solid red";
+for (let selTar of clickable) {    
     console.log(selTar.innerHTML);
     selTar.style.borderBottom = "transparent";
     selTar.addEventListener("click", function (evt) {
@@ -68,29 +68,40 @@ for (let feature of features) {
     })
 
 }
-/*$('#modal').on('shown', function () {
-    $('body').css('overflow', 'hidden');
-}).on('hidden', function () {
-    $('body').css('overflow', 'auto');
-})*/
 
 function openModal() {
 
     if (modal.classList.contains("show")) {
-        document.body.style.overflow = "auto";
-        // const top = document.body.style.top;
-        //document.body.style.position = 'fixed';
-        // document.body.style.top = `-${window.scrollY}px`;
-        //window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        document.body.style.overflow = "auto";       
         console.log("modal ent 1");
     } else {
         document.body.style.overflow = "hidden";
-
         //document.body.style.position = '';
         //document.body.style.top = '';
         console.log("modal ent 3");
     }
 }
+
+//Intersection Observer api, 
+const headerFeature = document.querySelectorAll(".headerFeature, .additionalSocials");
+observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            entry.target.classList.add('animate_me');
+        } else {
+            entry.target.classList.remove('animate_me');
+        }
+    });
+    /*console.log('entry: ', entry);
+    console.log('observer: ', observer);
+    entry.target.classList.add('animate_me');*/
+});
+
+headerFeature.forEach(heads => {
+    observer.observe(heads);
+});
+
+
 
 /*link number one
 function oneClickBookmark() {

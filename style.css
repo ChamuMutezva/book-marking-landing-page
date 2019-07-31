@@ -97,19 +97,74 @@ body {
         }
     }
 
+
+    .animate_me {
+        animation-name: heartBeat;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes heartBeat {
+        0% {
+            transform: scale(1);
+        }
+
+        14% {
+            transform: scale(1.3);
+        }
+
+        28% {
+            transform: scale(1);
+        }
+
+        42% {
+            transform: scale(1.3);
+        }
+
+        70% {
+            transform: scale(1);
+        }
+    }
+
     /*
+    @keyframes shake {
 
-   @keyframes slideOutLeft {
-       from {
-           transform: translate3d(0, 0, 0);
-       }
+        from,
+        to {
+            transform: translate3d(0, 0, 0);
+        }
 
-       20% {
-           visibility: hidden;
-           transform: translate3d(-100%, 0, 0);
-       }
-   }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: translate3d(-10px, 0, 0);
+        }
 
+        20%,
+        40%,
+        60%,
+        80% {
+            transform: translate3d(10px, 0, 0);
+        }
+    }
+*/
+
+
+
+    @keyframes slideOutLeft {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+
+        20% {
+            visibility: hidden;
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+
+    /*
    .slideOutLeft {
        animation-name: slideOutLeft;
    }
@@ -175,7 +230,7 @@ background-size: 80% 30%;*/
     div#oneClickBook {
         margin-top: 10%;
     }
-    
+
     .mainImagesDescr {
         margin-top: 30%;
     }
@@ -218,10 +273,15 @@ background-size: 80% 30%;*/
         color: black;
     }
 
-    .chrome {}
+    input.chrome:hover {
+        background-color: white;
+        color: blue;
+        cursor: grab;
+    }
 
-    h3 {
-        /* padding: 5% 0;*/
+    input[type="button"].firefox:hover {
+        background-color: white;
+        cursor: grab;
     }
 
     hr {
@@ -276,14 +336,15 @@ background-size: 80% 30%;*/
 
     button.btnFeature:hover {
         cursor: pointer;
+        color: red;
     }
-    /* .heroImage img::after {
-        content: "";
-          width: 60%;
-          height: 40%;
-       background-color: black;
-      
-    }*/
+
+    button.addExtBtn:hover {
+        cursor: pointer;
+        color: blue;
+        border: 1px solid blue;
+        background-color: white;
+    }
 
     div.backImgFeatures {
         position: absolute;
@@ -291,6 +352,11 @@ background-size: 80% 30%;*/
         height: 28vh;
         margin-left: 2%;
         border-bottom-right-radius: 20%;
+    }
+
+    summary:hover {
+        color: red;
+        cursor: pointer;
     }
 
     input.moreInfo {
