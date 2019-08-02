@@ -23,7 +23,7 @@ body {
     }
 
     input::placeholder {
-        color: red;
+      /*  color: red;*/
     }
 
     nav.featureLinks {
@@ -126,33 +126,6 @@ body {
         }
     }
 
-    /*
-    @keyframes shake {
-
-        from,
-        to {
-            transform: translate3d(0, 0, 0);
-        }
-
-        10%,
-        30%,
-        50%,
-        70%,
-        90% {
-            transform: translate3d(-10px, 0, 0);
-        }
-
-        20%,
-        40%,
-        60%,
-        80% {
-            transform: translate3d(10px, 0, 0);
-        }
-    }
-*/
-
-
-
     @keyframes slideOutLeft {
         from {
             transform: translate3d(0, 0, 0);
@@ -164,44 +137,9 @@ body {
         }
     }
 
-    /*
-   .slideOutLeft {
-       animation-name: slideOutLeft;
-   }
-   
-@keyframes fadeOutLeft {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        transform: translate3d(-100%, 0, 0);
-    }
-} 
- @keyframes slideOutRight {
-     from {
-         transform: translate3d(0, 0, 0);
-     }
-
-     to {
-         visibility: hidden;
-         transform: translate3d(100%, 0, 0);
-     }
- }
-
-
- .slideOutRight {
-     animation-name: slideOutRight;
- }
-*/
-
-
     section.hero {
         margin-bottom: 15%;
-        margin-top: 20%;
-        /*  background-color: blue;
-background-size: 80% 30%;*/
+        margin-top: 20%;      
     }
 
     div.speedySearching img,
@@ -220,11 +158,7 @@ background-size: 80% 30%;*/
         width: 89%;
         display: block;
         margin: auto;
-        max-height: 45vh;
-        /* text-align: center;
-         box-shadow: inset -4px 20px 16px 20px darkgrey;
-         */
-
+        max-height: 45vh;       
     }
 
     div#oneClickBook {
@@ -321,11 +255,6 @@ background-size: 80% 30%;*/
         font-weight: 700;
     }
 
-    /*  div.backImgFeatures::before {
-          left: 5%;
-         
-      }*/
-
     div.backImgHero {
         position: relative;
         ;
@@ -393,12 +322,21 @@ background-size: 80% 30%;*/
     figure {
         width: 80%;
         margin: auto;
-        border: 0.5px solid cornsilk;
+       /* border: 0.5px solid cornsilk;
         margin-bottom: 5%;
         height: 80vh;
         border-radius: 10px;
-        box-shadow: inset -1px 1px 0px 1px #e8e6e6;
+        box-shadow: inset -1px 1px 0px 1px #e8e6e6;*/
     }
+
+    .chromeExt, .firefoxExt, .operaExt {
+        width: 80%;
+        margin: 5% auto;
+        height: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
 
     summary::-webkit-details-marker {
         display: none;
@@ -416,7 +354,7 @@ background-size: 80% 30%;*/
         filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%);
     }
 
-    hr {
+   .questions hr {
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -585,11 +523,19 @@ background-size: 80% 30%;*/
 
 }
 
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 520px) {  
+    .chromeExt,
+    .firefoxExt,
+    .operaExt { 
+        width: 65%;
+    }
 
     figure {
+        /*height: 65vh;*/
+    }
 
-        height: 65vh;
+   figcaption p {
+        margin: 1% 10%;        
     }
 
     button.addExtBtn {
@@ -628,6 +574,20 @@ background-size: 80% 30%;*/
     body {
         overflow: auto;
         font-size: large;
+    }
+
+    .chromeExt,
+    .firefoxExt,
+    .operaExt {
+        width: 90%;        
+        height: 100%;       
+    }
+
+figcaption p {
+    margin: 5% 10%;
+}
+    figure {
+        height: 70%;
     }
 
     #modal img.bookmark {
@@ -750,10 +710,6 @@ background-size: 80% 30%;*/
         width: 25vw;
     }
 
-    figure {
-        height: 65vh;
-    }
-
     section.faqs {
         width: 60%;
         margin: 12% auto;
@@ -816,12 +772,16 @@ background-size: 80% 30%;*/
         color: white;
     }
 
+    .chromeExt {
+        align-self: end;
+    }
+
     .firefoxExt {
         align-self: center;
     }
 
     .operaExt {
-        align-self: end;
+        align-self: baseline;
     }
 
     .modalFeatures:nth-child(3) {

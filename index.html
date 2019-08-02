@@ -1,137 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="jquery.min.js"></script>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <title>Frontend Mentor | Bookmark landing page</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <script src="jquery.min.js"></script>
-</head>
-
-<body>
-  <div class="page_wrapper">
-    <header>
-      <section class="navLogo mainNav">
-        <img src="images/logo-bookmark.svg" class="bookmark">
-        <img src="images/icon-hamburger.svg" class="openClose">
-      </section>
-
-      <div id="modal" class="show">
-        <section class="navLogo">
-          <img src="images/logo-bookmark.svg" class="bookmark">
-          <img src="images/icon-close.svg" class="openClose">
+  <body>
+    <div class="page_wrapper">
+      <header>
+        <section class="navLogo mainNav">
+          <img src="images/logo-bookmark.svg" class="bookmark" />
+          <img src="images/icon-hamburger.svg" class="openClose" />
         </section>
 
-        <nav aria-label="site">
-          <div class="featureList">
-            <div class="modalFeatures features">
-              <a href="#feature">Features </a>
-            </div>
-            <div class="modalFeatures">
-              <a href="#pricing">Pricing </a>
-            </div>
-            <div class="modalFeatures">
-              <a href="#contacts">Contact</a>
-            </div>
-            <div class="modalFeatures">
-              <a href="" class="logs">Login</a>
-            </div>
-          </div>
-          <div class="socialIcons">
-            <ul>
-              <li class="twitter"><a href="https://twitter.com/ChamuMutezva" class="fa fa-twitter"
-                  aria-label="visit me on twitter" target="_blank" rel="noopener"></a>
-              </li>
-              <li class="facebook"><a href="https://www.facebook.com/chamu.mutezva" class="fa fa-facebook-square"
-                  aria-label="visit my facebook page" rel="noopener"></a>
-            </ul>
-          </div>
-        </nav>
+        <div id="modal" class="show">
+          <section class="navLogo">
+            <img src="images/logo-bookmark.svg" class="bookmark" />
+            <img src="images/icon-close.svg" class="openClose" />
+          </section>
 
-      </div>
-    </header>
-    <main>
-
-      <section class="hero">
-
-        <div class="heroImage">
-          <div class="backImgHero"></div>
-          <!-- <img src="images/illustration-hero.svg">-->
+          <nav aria-label="site">
+            <div class="featureList">
+              <div class="modalFeatures features">
+                <a href="#feature">Features </a>
+              </div>
+              <div class="modalFeatures">
+                <a href="#pricing">Pricing </a>
+              </div>
+              <div class="modalFeatures">
+                <a href="#contacts">Contact</a>
+              </div>
+              <div class="modalFeatures">
+                <a href="" class="logs">Login</a>
+              </div>
+            </div>
+            <div class="socialIcons">
+              <ul>
+                <li class="twitter">
+                  <a
+                    href="https://twitter.com/ChamuMutezva"
+                    class="fa fa-twitter"
+                    aria-label="visit me on twitter"
+                    target="_blank"
+                    rel="noopener"
+                  ></a>
+                </li>
+                <li class="facebook">
+                  <a
+                    href="https://www.facebook.com/chamu.mutezva"
+                    class="fa fa-facebook-square"
+                    aria-label="visit my facebook page"
+                    rel="noopener"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-
-        <div class="bookmarkManager">
-          <h1>A Simple Bookmark Manager</h1>
-          <p>
-            A clean and simple interface to organize your favourite websites. Open a new
-            browser tab and see your sites load instantly. Try it for free.
-          </p>
-
-          <div class="getIt">
-            <input type="button" class="chrome" value="Get it on Chrome" />
-            <input type="button" class="firefox" value=" Get it on Firefox" />
+      </header>
+      <main>
+        <section class="hero">
+          <div class="heroImage">
+            <div class="backImgHero"></div>
+            <!-- <img src="images/illustration-hero.svg">-->
           </div>
-        </div>
-      </section>
 
-      <section class="features">
-
-        <div class="featureSection" id="feature">
-          <div class="headerFeature">
-            <h2>Features</h2>
+          <div class="bookmarkManager">
+            <h1>A Simple Bookmark Manager</h1>
             <p>
-              Our aim is to make it quick and easy for you to access your favourite websites.
-              Your bookmarks sync between your devices so you can access them on the go.
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
             </p>
+
+            <div class="getIt">
+              <input type="button" class="chrome" value="Get it on Chrome" />
+              <input type="button" class="firefox" value=" Get it on Firefox" />
+            </div>
           </div>
+        </section>
 
-          <div class="mainFeature">
-
-            <div class="simpleBookMarkingLink featureLinks target1">
-              <hr />
-              <button class="btnFeature">Simple Bookmarking</button>
-            </div>
-
-            <div class="speedySearchingLink featureLinks target2">
-              <hr />
-              <button class="btnFeature">Speedy Searching</button>
-            </div>
-
-            <div class="easySharingLink featureLinks target3">
-              <hr />
-              <button class="btnFeature">Easy Sharing</button>
-            </div>
-
-          </div>
-        </div>
-
-
-
-        <div class="bookmarkInOneClick targets target1" id="oneClickBook">
-
-          <div class="altenateImg">
-            <div class="mainImages">
-              <div class="backImgFeatures"></div>
-              <img src="images/illustration-hero.svg">
-            </div>
-            <div class="mainImagesDescr">
-              <h3>Bookmark in one click</h3>
+        <section class="features">
+          <div class="featureSection" id="feature">
+            <div class="headerFeature">
+              <h2>Features</h2>
               <p>
-                Organize your bookmarks however you like. Our simple drag-and-drop interface
-                gives you complete control over how you manage your favourite sites.
+                Our aim is to make it quick and easy for you to access your
+                favourite websites. Your bookmarks sync between your devices so
+                you can access them on the go.
               </p>
-              <input type="button" class="moreInfo" value="More Info" />
+            </div>
+
+            <div class="mainFeature">
+              <div class="simpleBookMarkingLink featureLinks target1">
+                <hr />
+                <button class="btnFeature">Simple Bookmarking</button>
+              </div>
+
+              <div class="speedySearchingLink featureLinks target2">
+                <hr />
+                <button class="btnFeature">Speedy Searching</button>
+              </div>
+
+              <div class="easySharingLink featureLinks target3">
+                <hr />
+                <button class="btnFeature">Easy Sharing</button>
+              </div>
             </div>
           </div>
 
-<!-- this bunch of code can be deleted
+          <div class="bookmarkInOneClick targets target1" id="oneClickBook">
+            <div class="altenateImg">
+              <div class="mainImages">
+                <div class="backImgFeatures"></div>
+                <img src="images/illustration-hero.svg" />
+              </div>
+              <div class="mainImagesDescr">
+                <h3>Bookmark in one click</h3>
+                <p>
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <input type="button" class="moreInfo" value="More Info" />
+              </div>
+            </div>
+
+            <!-- this bunch of code can be deleted
           <div class="speedySearching targets target2 altenateImg" id="speedySearch">
             <div class="mainImages">
               <div class="backImgFeatures"></div>
@@ -160,175 +177,196 @@
             </div>
           </div>
         -->
-        </div>
-
-
-      </section>
-
-      <section class="extDownloads" id="pricing">
-        <h2>Download the extension</h2>
-        <p>
-          We’ve got more browsers in the pipeline. Please do let us know if you’ve
-          got a favourite you’d like us to prioritize.
-        </p>
-
-        <div class="extList">
-          <div class="chromeExt">
-            <figure>
-              <img class="browserImg" src="images/logo-chrome.svg">
-              <figcaption>
-                <h3>Add to Chrome</h3>
-                <p>Minimum version 62</p>
-                <img class="dotsImg" src="images/bg-dots.svg">
-                <button class="addExtBtn">Add & Install Extension</button>
-              </figcaption>
-            </figure>
           </div>
+        </section>
 
-          <div class="firefoxExt">
-            <figure>
-              <img class="browserImg" src="images/logo-firefox.svg">
-              <figcaption>
-                <h3>Add to Firefox</h3>
-                <p>Minimum version 55 </p>
-                <img class="dotsImg" src="images/bg-dots.svg">
-                <button class="addExtBtn">Add & Install Extension</button>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="operaExt">
-            <figure>
-              <img class="browserImg" src="images/logo-opera.svg">
-              <figcaption>
-                <h3>Add to Opera</h3>
-                <p>Minimum version 46 </p>
-                <img class="dotsImg" src="images/bg-dots.svg">
-                <button class="addExtBtn">Add & Install Extension</button>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-
-      </section>
-
-      <section class="faqs">
-        <div>
-          <h2>Frequently Asked Questions</h2>
+        <section class="extDownloads" id="pricing">
+          <h2>Download the extension</h2>
           <p>
-            Here are some of our FAQs. If you have any other questions you’d like
-            answered please feel free to email us.
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
           </p>
-        </div>
 
-        <div class="questions">
-          <details class="question1">
-            <summary>
-              <!-- Question 1 -->
-              What is Bookmark?
-            </summary>
-
-            <div class="answer ans1">
-              <p>
-                <!-- Answer 1 -->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-                justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-              </p>
+          <div class="extList">
+            <div class="chromeExt">
+              <figure>
+                <img class="browserImg" src="images/logo-chrome.svg" />
+                <figcaption>
+                  <h3>Add to Chrome</h3>
+                  <p>Minimum version 62</p>
+                </figcaption>
+              </figure>
+              <div class="supportItems">
+                <img class="dotsImg" src="images/bg-dots.svg" />
+                <button class="addExtBtn">Add & Install Extension</button>
+              </div>
             </div>
-          </details>
-          <hr>
-          <!--details and summary, what a nice combination for faqs-->
-          <details class="question2">
-            <summary>
-              <!-- Question 2 -->
-              How can I request a new browser?
-            </summary>
-            <div class="answer ans2">
-              <p>
-                <!-- Answer 2 -->
-                Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-                Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-                Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
 
-              </p>
+            <div class="firefoxExt">
+              <figure>
+                <img class="browserImg" src="images/logo-firefox.svg" />
+                <figcaption>
+                  <h3>Add to Firefox</h3>
+                  <p>Minimum version 55</p>
+                </figcaption>
+              </figure>
+              <div class="supportItems">
+                <img class="dotsImg" src="images/bg-dots.svg" />
+                <button class="addExtBtn">Add & Install Extension</button>
+              </div>
             </div>
-          </details>
-          <hr>
 
-          <details class="question3">
-            <summary>
-              <!-- Question 3 -->
-              Is there a mobile app?
-            </summary>
-            <div class="answer ans3">
-              <!-- Answer 3 -->
-              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
-              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-              sollicitudin ex et ultricies bibendum.
+            <div class="operaExt">
+              <figure>
+                <img class="browserImg" src="images/logo-opera.svg" />
+                <figcaption>
+                  <h3>Add to Opera</h3>
+                  <p>Minimum version 46</p>
+                </figcaption>
+              </figure>
+              <div class="supportItems">
+                <img class="dotsImg" src="images/bg-dots.svg" />
+                <button class="addExtBtn">Add & Install Extension</button>
+              </div>
             </div>
-          </details>
-          <hr>
+          </div>
+        </section>
 
-          <details class="question4">
-            <summary>
-              <!-- Question 4 -->
-              What about other Chromium browsers?
-            </summary>
-            <div class="answer ans4">
-              <!-- Answer 4 -->
-              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-              vitae neque eget nisl gravida pellentesque non ut velit.
+        <section class="faqs">
+          <div>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Here are some of our FAQs. If you have any other questions you’d
+              like answered please feel free to email us.
+            </p>
+          </div>
+
+          <div class="questions">
+            <details class="question1">
+              <summary>
+                <!-- Question 1 -->
+                What is Bookmark?
+              </summary>
+
+              <div class="answer ans1">
+                <p>
+                  <!-- Answer 1 -->
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis.
+                </p>
+              </div>
+            </details>
+            <hr />
+            <!--details and summary, what a nice combination for faqs-->
+            <details class="question2">
+              <summary>
+                <!-- Question 2 -->
+                How can I request a new browser?
+              </summary>
+              <div class="answer ans2">
+                <p>
+                  <!-- Answer 2 -->
+                  Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                  massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                  luctus eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdie tVivamus luctus
+                  eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdiet.
+                </p>
+              </div>
+            </details>
+            <hr />
+
+            <details class="question3">
+              <summary>
+                <!-- Question 3 -->
+                Is there a mobile app?
+              </summary>
+              <div class="answer ans3">
+                <!-- Answer 3 -->
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </div>
+            </details>
+            <hr />
+
+            <details class="question4">
+              <summary>
+                <!-- Question 4 -->
+                What about other Chromium browsers?
+              </summary>
+              <div class="answer ans4">
+                <!-- Answer 4 -->
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida pellentesque non ut velit.
+              </div>
+            </details>
+            <hr />
+          </div>
+          <input type="button" class="moreInfo" value="More Info" />
+        </section>
+      </main>
+
+      <footer>
+        <form class="contactUs">
+          <div class="stayUpToDate">
+            <p>35,000+ already joined</p>
+            <h3>
+              Stay up-to-date with what we’re doing
+            </h3>
+            <div class="signIn">
+              <input
+                type="email"
+                placeholder="enter your email here"
+                required
+              />
+              <input type="submit" value="Contact Us" />
             </div>
-          </details>
-          <hr>
-        </div>
-        <input type="button" class="moreInfo" value="More Info" />
-      </section>
-    </main>
+          </div>
+        </form>
 
-    <footer>
-      <form class="contactUs">
-        <div class="stayUpToDate">
-          <p>35,000+ already joined</p>
-          <h3>
-            Stay up-to-date with what we’re doing
-          </h3>
-          <div class="signIn">
-            <input type="email" placeholder="enter your email here" required>
-            <input type="submit" value="Contact Us">
+        <div class="additionalSocials" id="contacts">
+          <img src="images/logo-bookmark.svg" class="bookmarkFooter" />
+          <nav aria-label="site">
+            <a href="#feature">Features </a>
+            <a href="#pricing">Pricing </a>
+            <a href="#contacts">Contact</a>
+          </nav>
+          <div class="socialIcons">
+            <ul>
+              <li class="twitter">
+                <a
+                  href="https://twitter.com/ChamuMutezva"
+                  class="fa fa-twitter"
+                  aria-label="visit me on twitter"
+                  target="_blank"
+                  rel="noopener"
+                ></a>
+              </li>
+              <li class="facebook">
+                <a
+                  href="https://www.facebook.com/chamu.mutezva"
+                  class="fa fa-facebook-square"
+                  aria-label="visit my facebook page"
+                  rel="noopener"
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
-      </form>
 
-      <div class="additionalSocials" id="contacts">
-        <img src="images/logo-bookmark.svg" class="bookmarkFooter">
-        <nav aria-label="site">
-          <a href="#feature">Features </a>
-          <a href="#pricing">Pricing </a>
-          <a href="#contacts">Contact</a>
-        </nav>
-        <div class="socialIcons">
-          <ul>
-            <li class="twitter"><a href="https://twitter.com/ChamuMutezva" class="fa fa-twitter"
-                aria-label="visit me on twitter" target="_blank" rel="noopener"></a>
-            </li>
-            <li class="facebook"><a href="https://www.facebook.com/chamu.mutezva" class="fa fa-facebook-square"
-                aria-label="visit my facebook page" rel="noopener"></a>
-          </ul>
-        </div>
-      </div>
-
-
-
-
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Chamu Mutezva</a>.
-      </p>
-    </footer>
-  </div>
-  <script src="main.js"></script>
-</body>
-
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Chamu Mutezva</a>.
+        </p>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
