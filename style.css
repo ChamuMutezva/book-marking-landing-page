@@ -317,6 +317,7 @@ body {
     img.browserImg {
         margin-top: 10%;
         margin-bottom: 5%;
+        padding-top: 12%;
     }
 
     figure {
@@ -330,11 +331,12 @@ body {
     }
 
     .chromeExt, .firefoxExt, .operaExt {
-        width: 80%;
+        width: 70%;
         margin: 5% auto;
         height: 100%;
-        border: 1px solid black;
+       /* border: 1px solid black;*/
         border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px whitesmoke;
     }
     
 
@@ -583,6 +585,11 @@ body {
         height: 100%;       
     }
 
+.extPara {
+    width: 45%;
+    margin: 5% auto 10%;
+}
+
 figcaption p {
     margin: 5% 10%;
 }
@@ -637,9 +644,10 @@ figcaption p {
         display: none;
     }
 
-    .hero {
+    section.hero {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 5%;
     }
 
     .bookmarkManager {
