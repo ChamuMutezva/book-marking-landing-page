@@ -14,14 +14,14 @@ console.log(openClose);
 console.log(modal);
 
 let clickable = Array.from(document.querySelectorAll(".btnFeature"));
-//clickable[0].borderBottom = "1px solid red";
+//clickable[0].style.borderBottom = "3px solid red";
 for (let selTar of clickable) {    
     console.log(selTar.innerHTML);
     selTar.style.borderBottom = "transparent";
     selTar.addEventListener("click", function (evt) {
         clickable.forEach(elem => elem.style.borderBottom = "transparent");
         console.log(evt.target);
-        this.style.borderBottom = "1px solid red";
+        this.style.borderBottom = "3px solid red";
     })
 }
 
